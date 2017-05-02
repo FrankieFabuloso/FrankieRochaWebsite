@@ -1,0 +1,38 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Defined styling */
+.about-me {
+  padding: 48px 0px;
+  flex-grow: 1;
+}
+
+.about-me-blurb {
+  max-width: 300px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.about-me-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-img {
+  max-width: 75px;
+}
+
+.columns {
+  border: 1px solid #ddd;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
