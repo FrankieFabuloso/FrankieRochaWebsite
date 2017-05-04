@@ -57,6 +57,7 @@
   .column,
   .columns {
     height: 100%;
+    min-height: 350px;
   }
   .column:first-child,
   .columns:first-child {

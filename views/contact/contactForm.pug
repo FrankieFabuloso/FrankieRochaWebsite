@@ -1,0 +1,14 @@
+.form-wrapper
+  form.contact-form(action="https://formspree.io/rocha.francisco123@gmail.com" method="POST")
+    .row.form--contact-info
+      .six.columns.form-input-container.form-input-container--name
+        label(for='nameInput') Your name
+        input.form--name-input.u-full-width(type='text' name='name' placeholder='Your name')
+      .six.columns.form-input-container.form-input-container--email
+        label(for='exampleEmailInput') Your email
+        input.form--email-input.u-full-width(type='email' name='mail' placeholder='Your email')
+    .row.form--message-body
+      .form-textarea-container.form--message-input-container
+        label(for='exampleMessage') Message
+        textarea.form--message-input.u-full-width(name='message' placeholder='Hi Dave …')
+      input.button-primary(type='submit', value='Send')
