@@ -14,7 +14,7 @@ router.get('/blog', function(req, res, next) {
 
 router.get('/about', function(req, res, next) {
   console.log('hello:')
-  res.render('projects/index', { title: 'about' });
+  res.render('about/index', { title: 'about' });
 });
 
 router.get('/contact', function(req, res, next) {

@@ -1,0 +1,19 @@
+
+.right-column-container {
+  display: flex;
+  padding-top: 1.75rem;
+}
+
+.right-column-body {
+  max-width: 550px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 960px) {
+  .right-column.description {
+    margin-left: 35%;
+  }
+}
