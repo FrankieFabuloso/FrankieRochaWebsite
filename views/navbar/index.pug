@@ -1,15 +1,17 @@
 .navbar-wrapper
   .navbar-container
-    ul.navbar
-      li.navbar-item.active
-        a( href='#' )
+    .navbar
+      .navbar-item.active
+        a( href='/' )
           | Projects
-      li.navbar-item
-        a( href='#' )
+      .navbar-item
+        a( href='blog' )
           | Blog
-      li.navbar-item
-        a( href='#' )
+      .navbar-item
+        a( href='about' )
           | About
-      li.navbar-item
-        a( href='#' )
+      .navbar-item
+        a( href='contact' )
           | Contact
+  include aboutMe
+    include footer

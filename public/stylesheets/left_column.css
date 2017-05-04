@@ -27,12 +27,20 @@ html, body {
   max-width: 75px;
 }
 
-.columns {
-  border: 1px solid #ddd;
+.footer {
+  display: none;
 }
 
+@media (min-width: 960px){
+  .footer {
+    display: block;
+    padding: 20px 0px;
+  }
+}
 .left-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #252a2b;
+  color: white;
 }

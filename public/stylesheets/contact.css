@@ -1,0 +1,20 @@
+.contact-form {
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 960px) {
+  .form-columns {
+    margin-left: 4%;
+    min-height: 0px;
+  }
+
+  .six.columns.form-input-container {
+    width: 48%;
+    min-height: auto;
+  }
+
+  .six.columns.form-input-container:first-child {
+    margin-right: 4%;
+  }
+}
