@@ -1,9 +1,15 @@
+.about-me-name {
+  text-transform: lowercase;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 5px 25px;
   width: inherit;
+  text-transform: lowercase;
+  font-size: 18px;
 }
 
 .navbar-container {
@@ -34,16 +40,17 @@
 
 .navbar-item:hover:after {
    width: 100%;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #1EAEDB;
    padding: 4px 0px;
 }
 
 .navbar-item.active:after {
    width: 100%;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid #1EAEDB;
    padding: 4px 0px;
 }
 
 .navbar-item > a {
   text-decoration: none;
+  color: white;
 }
