@@ -1,6 +1,14 @@
-.contact-form {
+form.contact-form {
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
+}
+
+.form-wrapper > * {
+  margin: 0px auto;
+}
+
+.form-wrapper > h1 {
+  text-align: center;
 }
 
 @media (min-width: 960px) {
@@ -9,6 +17,16 @@
     min-height: 0px;
   }
 
+  .form-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  input {
+    min-height: 50px;
+  }
   .six.columns.form-input-container {
     width: 48%;
     min-height: auto;

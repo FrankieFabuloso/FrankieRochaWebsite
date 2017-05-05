@@ -5,15 +5,20 @@
 }
 
 .right-column-body {
-  max-width: 550px;
+  /*max-width: 550px;*/
+  width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.profile-content{
+  max-width: 550px;
+  margin: auto;
+}
 @media (min-width: 960px) {
   .right-column.description {
-    margin-left: 35%;
+    margin-left: 34.6666666667%;
   }
 }
