@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  .container
+    .row.body-info
+      .four.columns.left-column
+        include ../navbar/index
+      .eight.columns.right-column.description
+        .medium-blog
+          h3.medium-blog--header Medium Blog Posts
+          each value, key in myPosts
+            .medium-blog-post
+              a( href = `${value}`, target = '_blank' )
+                h4.medium-blog-post--title= key

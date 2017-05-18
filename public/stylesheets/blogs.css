@@ -1,0 +1,30 @@
+.medium-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.medium-blog-post {
+  width: 90%;
+}
+.medium-blog-post > a {
+  text-decoration: none;
+  color: #222;
+}
+
+.medium-blog-post:hover > a {
+  color: #777;
+}
+
+.medium-blog-post--title:first-child {
+  border-top: 1px solid #e8e8e8;
+}
+
+.medium-blog-post--title {
+  margin: 0px;
+  width: 90%;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 20px;
+}
