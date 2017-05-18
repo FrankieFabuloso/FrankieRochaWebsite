@@ -1,6 +1,5 @@
 const express = require( 'express' )
 const router = express.Router()
-const fetch = require( 'node-fetch' )
 const https = require( 'https' )
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -25,11 +24,12 @@ router.get('/blog', function(req, response, next) {
     res.on( 'end', () => {
       result =  JSON.parse(result.split('</x>')[1])
       const posts = result.payload.references.Post
-      const postValues = Object.values(posts)
+      const postValues = Object.keys(posts).map( key => posts[key])
       const myPosts = postValues.reduce( (memo, value ) => {
         memo[ value['title'] ] = 'https://medium.com/@rocha.francisco123value/'+value['uniqueSlug']
         return memo
       }, {})
+      
       response.render('blogs/index', { title: 'about', myPosts })
     })
   })
